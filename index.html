@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDFCraft - Modern & Elegant PDF Toolkit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-indigo-600 p-2 rounded-xl text-white shadow-lg shadow-indigo-500/30">
+                    <i class="fa-solid fa-file-pdf text-xl"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight bg-gradient-to-r from-indigo-400 to-rose-400 bg-clip-text text-transparent">PDFCraft</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+                <a href="#tools" class="hover:text-indigo-400 transition">All Tools</a>
+                <a href="#features" class="hover:text-indigo-400 transition">Features</a>
+                <a href="#ads" class="hover:text-indigo-400 transition">Adsterra Ready</a>
+            </nav>
+            <div>
+                <button class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-xl text-sm font-medium shadow-lg shadow-indigo-600/20 transition">Get Started</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="max-w-7xl mx-auto px-4 py-12 flex-grow">
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">Every tool you need to work with PDFs in <span class="bg-gradient-to-r from-indigo-400 to-rose-400 bg-clip-text text-transparent">one place</span></h1>
+            <p class="text-slate-400 text-lg">Every tool is 100% free and easy to use. Merge, compress, convert, and edit PDFs with modern elegance.</p>
+        </div>
+
+        <!-- Tools Grid (iLovePDF Style but More Modern) -->
+        <div id="tools" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Tool 1: Merge PDF -->
+            <div class="group bg-slate-900 border border-slate-800 hover:border-indigo-500/50 p-6 rounded-2xl shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <div class="w-12 h-12 bg-rose-500/10 text-rose-400 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-object-ungroup"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Merge PDF</h3>
+                <p class="text-slate-400 text-sm">Combine PDFs in the order you want with the easiest PDF merger available.</p>
+            </div>
+
+            <!-- Tool 2: Compress PDF -->
+            <div class="group bg-slate-900 border border-slate-800 hover:border-indigo-500/50 p-6 rounded-2xl shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <div class="w-12 h-12 bg-indigo-500/10 text-indigo-400 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-compress"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Compress PDF</h3>
+                <p class="text-slate-400 text-sm">Reduce file size while optimizing for maximal PDF quality.</p>
+            </div>
+
+            <!-- Tool 3: Image to PDF -->
+            <div class="group bg-slate-900 border border-slate-800 hover:border-indigo-500/50 p-6 rounded-2xl shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-file-image"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Image to PDF</h3>
+                <p class="text-slate-400 text-sm">Transform JPG, PNG, and other images into clean professional PDFs.</p>
+            </div>
+
+            <!-- Tool 4: PDF to Word -->
+            <div class="group bg-slate-900 border border-slate-800 hover:border-indigo-500/50 p-6 rounded-2xl shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-file-word"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">PDF to Word</h3>
+                <p class="text-slate-400 text-sm">Easily convert your PDF files into easy to edit DOC and DOCX documents.</p>
+            </div>
+
+            <!-- Tool 5: Split PDF -->
+            <div class="group bg-slate-900 border border-slate-800 hover:border-indigo-500/50 p-6 rounded-2xl shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <div class="w-12 h-12 bg-purple-500/10 text-purple-400 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-scissors"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Split PDF</h3>
+                <p class="text-slate-400 text-sm">Separate one page or a whole set for easy conversion into independent files.</p>
+            </div>
+
+            <!-- Tool 6: Protect PDF -->
+            <div class="group bg-slate-900 border border-slate-800 hover:border-indigo-500/50 p-6 rounded-2xl shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <div class="w-12 h-12 bg-sky-500/10 text-sky-400 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Protect PDF</h3>
+                <p class="text-slate-400 text-sm">Encrypt your PDF file with a secure password to prevent unauthorized access.</p>
+            </div>
+
+        </div>
+
+        <!-- Adsterra Banner Section -->
+        <div id="ads" class="mt-16 bg-slate-900/80 border border-slate-800 rounded-2xl p-8 text-center">
+            <span class="text-xs uppercase tracking-widest text-indigo-400 font-bold mb-4 block">Advertisement</span>
+            <div class="my-4 flex justify-center items-center min-h-[60px]">
+                <script>
+                  atOptions = {
+                    'key' : '330c5f5bb61222caf90dd414bdcb9b33',
+                    'format' : 'iframe',
+                    'height' : 60,
+                    'width' : 468,
+                    'params' : {}
+                  };
+                </script>
+                <script src="https://bauval.org/22/330c5f5bb61222caf90dd414bdcb9b33"></script>
+            </div>
+            <p class="text-slate-400 text-xs mt-4">High traffic par yahan ads display hon ge aur aapki earning generate hogi.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-900/55 py-6 text-center text-sm text-slate-500">
+        <p>&copy; 2026 PDFCraft. All rights reserved. Built for global utility and earnings.</p>
+    </footer>
+
+</body>
+</html>
